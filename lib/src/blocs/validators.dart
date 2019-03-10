@@ -16,7 +16,7 @@ class Validators {
       if (password.length > 3) {
         sink.add(password);
       } else {
-        sink.addError('Enter a valid email');
+        sink.addError('Enter a valid  password');
       }
     },
   );

@@ -11,10 +11,12 @@ class Bloc extends Validators {
 
 // Change data
   Function(String) get changeEmail => _email.sink.add;
-  Function(String) get changePAssword => _password.sink.add;
+  Function(String) get changePassword => _password.sink.add;
 
   dispose() {
     _email.close();
     _password.close();
   }
 }
+
+final block = Bloc();
